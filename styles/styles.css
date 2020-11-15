@@ -127,11 +127,11 @@ hr.line {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-.showcase {
-  background: #f6f5f5;
+.featured {
+  background: #f4f4f4;
 }
 
-.showcase_products {
+.featured_products {
   display: block;
   position: relative;
   -webkit-transform: scale(0.85);
@@ -146,25 +146,63 @@ hr.line {
   line-height: 1.2;
 }
 
-.showcase_products:hover, .showcase_products:focus {
+.featured_products:hover, .featured_products:focus {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.showcase_products:hover .showcase_details, .showcase_products:focus .showcase_details {
+.featured_products:hover .featured_details, .featured_products:focus .featured_details {
   opacity: 1;
 }
 
-.showcase_details {
+.featured_details {
   opacity: 0;
   -webkit-transition: opacity 250ms linear;
   transition: opacity 250ms linear;
 }
 
-.showcase_details span {
+.featured_details span {
   display: block;
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.accessories {
+  background: #f4f4f4;
+}
+
+.accessories_products {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  border: 1px solid #dddddd;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  line-height: 0.1;
+}
+
+.accessories_products:hover, .accessories_products:focus {
+  -webkit-box-shadow: 0 0 2px 1px black;
+          box-shadow: 0 0 2px 1px black;
+}
+
+.accessories_products:hover .accessories_details, .accessories_products:focus .accessories_details {
+  opacity: 1;
+}
+
+.accessories_details {
+  opacity: 0;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 601px) {
